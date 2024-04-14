@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PatripinamReal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <a
+              class="navbar-brand fw-bolder text-light text-center fs-1 me-auto"
+              href="./index.html"
+            >
+              <img
+                src="./Traveling-Agency-Logo-1170x658-removebg-preview.png"
+                alt="Logo"
+                width="150"
+                height="80"
+                class="d-inline-block"
+              />
+              <span class="cia">Patrippinam! </span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-light dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Vartotojams
+                </a>
+                <ul class="dropdown-menu bg-secondary">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./login copy.html"
+                      target="_blank"
+                      >Prisijungti</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./personalblog copy.html"
+                      target="_blank"
+                      >Personal Blog</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="./index.html#pasiulymai"
+                  >Kelioniu pasiulymai</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./index.html#autonuoma"
+                  >Autonuoma</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./index.html#patarimai"
+                  >Patarimai keliaujantiems</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./index.html#zurnalas"
+                  >Kelioniu zurnalas</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <body class="bg-secondary">
+      <section class="container bg-secondary py-5">
+        <h1 class="text-center mb-5">Užpildykite formą ir mes susisieksime!</h1>
+        <form action="./index.html">
+          <fieldset>
+            <legend class="mb-4">Užklausos forma</legend>
+            <div class="mb-3">
+              <label for="name" class="form-label">Vardas:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="mail" class="form-label">El. paštas:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="mail"
+                name="mail"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="num" class="form-label">Tel. Nr.:</label>
+              <input
+                type="number"
+                class="form-control"
+                id="num"
+                name="num"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Šalis:</label>
+              <select class="form-select" id="salis" name="salis">
+                <option value="">-- Pasirinkite šalį --</option>
+                <option value="1">Lietuva</option>
+                <option value="2">Anglija</option>
+                <option value="3">Vokietija</option>
+                <option value="4">Olandija</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Trukmė:</label>
+              <select class="form-select" id="trukme" name="trukme">
+                <option value="">-- Pasirinkite trukmę --</option>
+                <option value="1">1 sav.</option>
+                <option value="2">2 sav.</option>
+                <option value="3">Mėnuo</option>
+                <option value="4">3 mėnesiai</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="date" class="form-label">Išvykimo data:</label>
+              <input
+                type="date"
+                class="form-control"
+                id="date"
+                name="date"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Papildomai:</label><br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="drd"
+                  name="drd"
+                />
+                <label class="form-check-label" for="drd">Draudimas</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="taxi"
+                  name="taxi"
+                />
+                <label class="form-check-label" for="taxi">Taxi</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="gid"
+                  name="gid"
+                />
+                <label class="form-check-label" for="gid">Gidas</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="vir"
+                  name="vir"
+                />
+                <label class="form-check-label" for="vir">Virėjas</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Keleivis:</label><br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="vyras"
+                  name="kel"
+                />
+                <label class="form-check-label" for="vyras">Vyras</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="moteris"
+                  name="kel"
+                />
+                <label class="form-check-label" for="moteris">Moteris</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="kate"
+                  name="kel"
+                />
+                <label class="form-check-label" for="kate">Katė</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="suo"
+                  name="kel"
+                />
+                <label class="form-check-label" for="suo">Šuo</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="txt" class="form-label">Papildykite:</label>
+              <textarea
+                class="form-control"
+                id="txt"
+                name="txt"
+                rows="3"
+                placeholder="Papildykite..."
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <button type="submit" class="btn btn-primary">Pateikti</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <footer class="bg-secondary text-light py-5">
+        <div class="container">
+          <div class="foteris row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div class="footer-content">
+                <a href="#" class="btn btn-outline-light btn-lg d-block mb-3"
+                  >Go up</a
+                >
+                <p>&copy; 2024 Mano webas. All rights reserved.</p>
+                <address class="mt-5 adresas">
+                  123 Pgr Gatve<br />
+                  Kaunas, LTU<br />
+                  Tel: 861532954
+                </address>
+                <p>Connect with us</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href="#" class="text-light"
+                      ><i class="bi bi-facebook"></i
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="text-light"
+                      ><i class="bi bi-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="text-light"
+                      ><i class="bi bi-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="text-light"
+                      ><i class="bi bi-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1622.369530649245!2d23.91706829107701!3d54.89630505469218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e722769657b463%3A0x9371a1bdb7ac453b!2sLaisv%C4%97s%20al.%2035%2C%2044311%20Kaunas!5e0!3m2!1sen!2slt!4v1707999335280!5m2!1sen!2slt"
+                  width="100%"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </body>
+</html>
